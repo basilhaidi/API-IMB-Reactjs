@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+html,
+body,
+header {
+    scroll-behavior: smooth;
+}
+
+nav .navbar-nav a,
+.jumbotron,
+.navbar-brand,
+.footer p {
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar-brand img {
+    width: auto;
+    margin-bottom: 16px;
+    height: 64px;
+}
+
+.logo-kanan img {
+    height: 6rem;
+}
+
+.icon-search{
+    width: auto;
+    height: 1.5rem;
+}
+
+.footer {
+    padding: 16px;
+}
