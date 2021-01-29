@@ -23,10 +23,14 @@ nav .navbar-nav a,
     height: 6rem;
 }
 
-.icon-search{
+.icon-search {
     width: auto;
     height: 1.5rem;
 }
+
+.fitur-search{
+    height: 100vh;
+} 
 
 .footer {
     padding: 16px;

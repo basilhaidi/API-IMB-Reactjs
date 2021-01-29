@@ -11,7 +11,7 @@ class landingPage extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container fitur-search">
         <SearchForm />
       </div>
     );
