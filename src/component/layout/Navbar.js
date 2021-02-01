@@ -5,7 +5,7 @@ import logoImdb from "assets/img/logo-imdb.png";
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-secondary shadow-sm">
+      <nav className="navbar navbar-expand-lg navbar-light bg-secondary shadow">
         <div className="container">
           <a className="navbar-brand fs-2" href="#">
             <img src={logoMovie}></img> <span>Basilicious Movie</span>

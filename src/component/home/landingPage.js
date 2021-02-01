@@ -1,21 +1,27 @@
 import React, { Component } from "react";
-import SearchForm from "./searchForm";
-import { fetchMovies } from "actions/searchActions";
+import { Route, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
+import SearchForm from "./searchForm";
+import MoviesContainer from "./MoviesContainer";
+import Spinner from "component/layout/Spinner";
 
 class landingPage extends Component {
-  constructor(props) {
-    super(props);
-    this.props.fetchMovies();
-  }
-
   render() {
+    const { loading } = this.props;
+    const { movies } = this.props;
+    console.log(this.props.loading.movies);
     return (
       <div className="container fitur-search">
         <SearchForm />
+        {this.props.loading.movies.length > 0 && (
+          <MoviesContainer movies={loading} />
+        )}
       </div>
     );
   }
 }
 
-export default connect(null, { fetchMovies })(landingPage);
+const mapStateToProps = (state) => ({
+  loading: state.movies,
+});
+export default connect(mapStateToProps)(landingPage);
