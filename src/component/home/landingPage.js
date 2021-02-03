@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Route, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import SearchForm from "./searchForm";
 import MoviesContainer from "./MoviesContainer";
@@ -8,6 +7,7 @@ class landingPage extends Component {
   render() {
     const { loading } = this.props;
     const { movies } = this.props;
+
     return (
       <div className="container fitur-search">
         <SearchForm />

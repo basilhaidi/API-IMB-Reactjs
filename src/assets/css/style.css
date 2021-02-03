@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
 
 html,
 body,
@@ -10,7 +10,7 @@ nav .navbar-nav a,
 .jumbotron,
 .navbar-brand,
 .footer p {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 .navbar-brand img {
@@ -28,9 +28,9 @@ nav .navbar-nav a,
     height: 1.5rem;
 }
 
-.fitur-search{
-    height: 100vh;
-} 
+.fitur-search {
+    min-height: 100vh;
+}
 
 .footer {
     padding: 16px;
